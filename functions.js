@@ -199,7 +199,11 @@ Output:
  */
 
 export function makeModelsStringWithReduce(arr) {
-    return '';
+    return arr.reduce((acc, curr) => {
+        const newAcc = acc + curr.model;
+
+        return newAcc;
+    }, '');
 }
 
 /*
