@@ -83,7 +83,7 @@ test('should make a spanish array of pet objects', (expect) => {
     expect.deepEqual(actual, expected);
 });
 
-skip('should return all objects with an added isHungry property equal to true', (expect) => { 
+test('should return all objects with an added isHungry property equal to true', (expect) => { 
     const expected = [
         { name: 'scooter', isHungry: true, type: 'dog' },
         { name: 'sassy', isHungry: true, type: 'dog' },

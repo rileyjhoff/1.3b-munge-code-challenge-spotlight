@@ -76,7 +76,7 @@ Output:
 ]*/
 
 export function makeArrayWithIsHungry(arr) {
-    return []
+    return arr.map(pet => {pet['isHungry'] = true; return pet;});
 }
 
 /*
