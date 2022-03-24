@@ -47,7 +47,7 @@ Output:
 */
 
 export function makeReversedArrayOfTypes(arr) {
-    return [];
+    return arr.map(dog => dog.type).reverse();
 }
 
 /*
@@ -76,7 +76,7 @@ Output:
 ]*/
 
 export function makeArrayWithIsHungry(arr) {
-     return []
+    return []
 }
 
 /*
