@@ -213,7 +213,11 @@ Output: 14
  */
 
 export function getSumOfAges(arr) {
-    return 0;
+    return arr.reduce((acc, curr) => {
+        const newAcc = acc + curr.age;
+
+        return newAcc;
+    }, 0);
 }
 
 /*

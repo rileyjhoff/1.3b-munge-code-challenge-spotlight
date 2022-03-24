@@ -169,7 +169,7 @@ skip('should return an array of chevy cars', (expect) => {
 });
 
 
-test('should return an models string', (expect) => {
+skip('should return an models string', (expect) => {
     const expected = 'taurusmalibubroncosilveradoexpresscamero';
 
     const actual = makeModelsStringWithReduce([...vehicles]);
@@ -179,7 +179,7 @@ test('should return an models string', (expect) => {
 
 
 
-skip('should return sum of ages', (expect) => {
+test('should return sum of ages', (expect) => {
     const expected = 14;
 
     const actual = getSumOfAges([...vehicles]);
