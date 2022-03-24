@@ -140,7 +140,7 @@ Output:
 */
 
 export function makeArrayOfArraysOfArrays(arr) {
-    return [];
+    return arr.map(pet => Object.entries(pet));
 }
 
 ////////////////////////////////////////////////////////
