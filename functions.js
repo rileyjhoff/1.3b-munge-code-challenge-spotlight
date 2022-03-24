@@ -90,7 +90,7 @@ Output:
 ]*/
 
 export function makeShoutingArray(arr) {
-    return [];
+    return arr.map(pet => {pet.name = pet.name.toUpperCase(); return pet;});
 }
 
 

@@ -33,7 +33,7 @@ const otherPets = [
 ];
 
 
-test('should return dogs', (expect) => {
+skip('should return dogs', (expect) => {
     const expected = [
         { name: 'scooter', type: 'dog' },
         { name: 'sassy', type: 'dog' },    
@@ -45,14 +45,14 @@ test('should return dogs', (expect) => {
 });
 
 
-test('should make an array of names', (expect) => {
+skip('should make an array of names', (expect) => {
     const expected = ['coco', 'jumper'];
     const actual = makeArrayOfNames([...pets]);
 
     expect.deepEqual(actual, expected);
 });
 
-test('should return dogs names', (expect) => {
+skip('should return dogs names', (expect) => {
     const expected = ['scooter', 'sassy'];
     
     const actual = getNamesOfDogs([...otherPets]);
@@ -60,14 +60,14 @@ test('should return dogs names', (expect) => {
     expect.deepEqual(actual, expected);
 });
 
-test('should make a reverse array of type', (expect) => {
+skip('should make a reverse array of type', (expect) => {
     const expected = ['frog', 'cat'];
     const actual = makeReversedArrayOfTypes([...pets]);
 
     expect.deepEqual(actual, expected);
 });
 
-test('should make a spanish array of pet objects', (expect) => {
+skip('should make a spanish array of pet objects', (expect) => {
     const expected = [
         {
             nombre: 'coco',
@@ -83,7 +83,7 @@ test('should make a spanish array of pet objects', (expect) => {
     expect.deepEqual(actual, expected);
 });
 
-test('should return all objects with an added isHungry property equal to true', (expect) => { 
+skip('should return all objects with an added isHungry property equal to true', (expect) => { 
     const expected = [
         { name: 'scooter', isHungry: true, type: 'dog' },
         { name: 'sassy', isHungry: true, type: 'dog' },
@@ -95,7 +95,7 @@ test('should return all objects with an added isHungry property equal to true', 
     expect.deepEqual(actual, expected);
 });
 
-skip('should return a shouting array', (expect) => {
+test('should return a shouting array', (expect) => {
     const expected = [
         { name: 'SCOOTER', type: 'dog' },
         { name: 'SASSY', type: 'dog' },
