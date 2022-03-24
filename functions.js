@@ -37,7 +37,7 @@ OUTPUT:
 */
 
 export function getNamesOfDogs(arr) {
-    return [];
+    return arr.filter(dog => { if(dog.type === 'dog') return dog;}).map(dog => dog.name);
 }
 
 /*
