@@ -45,14 +45,14 @@ test('should return dogs', (expect) => {
 });
 
 
-skip('should make an array of names', (expect) => {
+test('should make an array of names', (expect) => {
     const expected = ['coco', 'jumper'];
     const actual = makeArrayOfNames([...pets]);
 
     expect.deepEqual(actual, expected);
 });
 
-skip('should return dogs names', (expect) => {
+test('should return dogs names', (expect) => {
     const expected = ['scooter', 'sassy'];
     
     const actual = getNamesOfDogs([...otherPets]);
