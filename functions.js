@@ -200,9 +200,9 @@ Output:
 
 export function makeModelsStringWithReduce(arr) {
     return arr.reduce((acc, curr) => {
-        const newAcc = acc + curr.model;
+        acc = acc + curr.model;
 
-        return newAcc;
+        return acc;
     }, '');
 }
 
@@ -214,9 +214,9 @@ Output: 14
 
 export function getSumOfAges(arr) {
     return arr.reduce((acc, curr) => {
-        const newAcc = acc + curr.age;
+        acc = acc + curr.age;
 
-        return newAcc;
+        return acc;
     }, 0);
 }
 
