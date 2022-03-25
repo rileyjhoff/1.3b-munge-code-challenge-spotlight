@@ -231,7 +231,18 @@ Output:
  */
 
 export function makeCountObject(arr) {
-    return {};
+    return arr.reduce((acc, curr) => {
+        if(curr.type === 'car') {
+            acc.car++;
+        }
+        if(curr.type === 'truck') {
+            acc.truck++;
+        }
+        if(curr.type === 'van') {
+            acc.van++;
+        }
+        return acc;
+    }, { car: 0, truck: 0, van: 0 });
 }
 
 
