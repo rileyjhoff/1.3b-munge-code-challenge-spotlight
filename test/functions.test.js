@@ -188,7 +188,7 @@ skip('should return sum of ages', (expect) => {
 });
 
 
-test('should return an count object', (expect) => {
+skip('should return an count object', (expect) => {
     const expected = {
         car: 3,
         truck: 2,
@@ -200,7 +200,7 @@ test('should return an count object', (expect) => {
     expect.deepEqual(actual, expected);
 });
 
-skip('should return an weird string of keys', (expect) => {
+test('should return an weird string of keys', (expect) => {
 
 
     const actual = makeKeysString([...vehicles]);

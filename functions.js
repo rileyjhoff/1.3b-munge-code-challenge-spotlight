@@ -255,5 +255,8 @@ Output:
 
 
 export function makeKeysString(arr) {
-    return '';
+    return arr.reduce((acc, curr) => {
+        acc = Object.keys(curr).join('');
+        return acc;
+    }, '');
 }
